@@ -13,3 +13,8 @@ function App() {
       description: "Online shopping platform"
     }
   ]);
+
+  const [search, setSearch] = useState("");
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
