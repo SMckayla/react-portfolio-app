@@ -18,3 +18,13 @@ function App() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [darkMode, setDarkMode] = useState(false);
+
+  // ADD PROJECT
+  const addProject = () => {
+    if (!title || !description) return;
+
+    const newProject = {
+      id: Date.now(),
+      title,
+      description
+    };
