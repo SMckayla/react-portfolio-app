@@ -28,3 +28,8 @@ function App() {
       title,
       description
     };
+    
+     setProjects([...projects, newProject]);
+    setTitle("");
+    setDescription("");
+  };
