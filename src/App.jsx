@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+const [projects, setProjects] = useState([]);
 function App() {
   return (
     <div>
