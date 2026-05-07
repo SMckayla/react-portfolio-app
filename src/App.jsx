@@ -10,3 +10,16 @@ function App() {
 }
 
 export default App;
+
+const projects = [
+  {
+    id: 1,
+    title: "Portfolio Website",
+    description: "Built using React"
+  },
+  {
+    id: 2,
+    title: "E-commerce App",
+    description: "Online shopping platform"
+  },
+];

@@ -1,4 +1,4 @@
-function ProjectCard() {
+function ProjectCard(props) {
   return (
     <div>
       <h2>Project Title</h2>
