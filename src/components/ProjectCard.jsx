@@ -1,4 +1,4 @@
-function ProjectCard(title, description, onDelete) {
+function ProjectCard({ id, title, description, onDelete }) {
   return (
     <div className="card">
       <h2>{title}</h2>

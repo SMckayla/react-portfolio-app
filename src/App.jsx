@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ProjectCard from "./components/ProjectCard";
 
 function App() {
@@ -34,8 +35,17 @@ function App() {
     setDescription("");
   };
 
+const filteredProjects = projects.filter((project) =>
+  project.title.toLowerCase().includes(search.toLowerCase())
+);
+const deleteProject = (id) => {
+  setProjects(projects.filter((project) => project.id !== id));
+};
+
 return (
   <div>
+   <h1>My Portfolio App</h1>
+    <p>Total Projects: {projects.length}</p>
 
     <input
       className="input"
@@ -68,13 +78,15 @@ return (
 
     {/* now you use filteredProjects here */}
     {filteredProjects.map((project) => (
-      <ProjectCard
-        key={project.id}
-        title={project.title}
-        description={project.description}
-      />
+     <ProjectCard
+  id={project.id}
+  title={project.title}
+  description={project.description}
+  onDelete={deleteProject}
+/>
     ))}
 
   </div>
 );
 }
+export default App;
