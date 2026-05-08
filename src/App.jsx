@@ -34,4 +34,31 @@ function App() {
     setDescription("");
   };
 
- 
+ return (
+  <div>
+
+    <input
+      className="input"
+      placeholder="Search projects..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+
+    <br /><br />
+
+    <input
+      className="input"
+      placeholder="Project title"
+      value={title}
+      onChange={(e) => setTitle(e.target.value)}
+    />
+
+    <input
+      className="input"
+      placeholder="Project description"
+      value={description}
+      onChange={(e) => setDescription(e.target.value)}
+    />
+
+  </div>
+);
