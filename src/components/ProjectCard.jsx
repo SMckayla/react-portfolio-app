@@ -1,6 +1,6 @@
 function ProjectCard(title, description, onDelete) {
   return (
-    <div>
+    <div className="card">
       <h2>{title}</h2>
 <p>{description}</p>
 
