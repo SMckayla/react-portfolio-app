@@ -1,8 +1,8 @@
-function ProjectCard() {
+function ProjectCard(title, description) {
   return (
     <div>
-      <h2>Project Title</h2>
-      <p>Project Description</p>
+      <h2>{title}</h2>
+<p>{description}</p>
     </div>
   );
 }
