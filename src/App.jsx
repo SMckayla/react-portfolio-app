@@ -62,3 +62,8 @@ function App() {
 
   </div>
 );
+
+   <button onClick={addProject}>Add Project</button>
+
+      <br /><br />
+      
