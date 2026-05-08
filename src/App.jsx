@@ -34,7 +34,7 @@ function App() {
     setDescription("");
   };
 
- return (
+return (
   <div>
 
     <input
@@ -60,23 +60,20 @@ function App() {
       onChange={(e) => setDescription(e.target.value)}
     />
 
+    <button onClick={addProject}>
+      Add Project
+    </button>
+
+    <br /><br />
+
+    {/* now you use filteredProjects here */}
+    {filteredProjects.map((project) => (
+      <ProjectCard
+        key={project.id}
+        title={project.title}
+        description={project.description}
+      />
+    ))}
+
   </div>
 );
-
-   
-      <button onClick={addProject}>Add Project</button>
-
-      <br /><br />
-
-      {/* now you use filteredProjects here */}
-      {filteredProjects.map((project) => (
-        <ProjectCard
-          key={project.id}
-          title={project.title}
-          description={project.description}
-        />
-      ))}
-
-    </div>
-  );
-}
