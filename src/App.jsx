@@ -63,7 +63,20 @@ function App() {
   </div>
 );
 
-   <button onClick={addProject}>Add Project</button>
+   
+      <button onClick={addProject}>Add Project</button>
 
       <br /><br />
-      
+
+      {/* now you use filteredProjects here */}
+      {filteredProjects.map((project) => (
+        <ProjectCard
+          key={project.id}
+          title={project.title}
+          description={project.description}
+        />
+      ))}
+
+    </div>
+  );
+}
